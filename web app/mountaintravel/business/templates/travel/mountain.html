@@ -1,0 +1,87 @@
+{% extends 'travel/index.html' %}
+
+{% block title %}
+<title>Mountain Travel</title>
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+      <div class="background-image" style="background-image:url(static/travel/images/main.jpg);"></div>
+      <div class="hero-content">
+          <h1>Mountain Travel</h1>
+          <h3>Unmissable adventure toure around the world</h3>
+          <a href="#contact" class="btn">Contact Us Now</a>
+      </div>
+  </section>
+  <section class="destination">
+    <a name="destination"></a>
+      <h3 class="title">Some of our destinations</h3>
+      <p> To travel from one place to another for different purposes is generally called travelling. People do not travel always for the same purposes. Someone travels to gain knowledge and experience, someone travels for pleasure, someone travels for business purposes etc.
+           It has much educative value. It is a part of education.</p>
+      <hr>
+
+      <ul class="grid">
+          <li class="small" style="background-image:url(static/travel/images/img1.jpg);"></li>
+          <li class="large" style="background-image:url(static/travel/images/img2.jpg);"></li>
+          <li class="large" style="background-image:url(static/travel/images/img3.jpg);"></li>
+          <li class="small" style="background-image:url(static/travel/images/img4.jpg);"></li>
+      </ul>
+  </section>
+  <section class="packages">
+    <a name="tour"></a>
+      <h3 class="title">Tour Packages</h3>
+      <p>Welcome to a soulful experience of vacationing in India, the cradle of ancient civilization with rich cultural heritage.
+          Experience the sights and sounds of its amazing diversity that is embedded in its geography, people and their cultures</p>
+      <hr>
+      <ul class="grid">
+          <li>
+              <i class="fa fa-compass fa-4x"></i>
+              <h4>Guided Trip</h4>
+              <p>You’ve been waiting for this moment. You finally have free time to travel overseas and the entire world is your oyster.
+                  You can just imagine the amazing food, magical wildlife, and stunning beaches.</p>
+          </li>
+          <li>
+              <i class="fa fa-camera-retro fa-4x"></i>
+              <h4>Photo Trips</h4>
+              <p>Prophototrip provides some of the best photo and photography travel tours and trips serving professional, intermediate and beginner photographers internationally.</p>
+          </li>
+          <li>
+              <i class="fa fa-bicycle fa-4x"></i>
+              <h4>Bicycle Trips</h4>
+              <p>We, at The Bicycle Trip, kick started our cycling movement in 2017 and have spent countless hours cycling in Goa, exploring scenic trails, and fascinating stories.</p>
+          </li>
+          <li>
+              <i class="fa fa-flag-checkered fa-4x"></i>
+              <h4>Racing Trip</h4>
+              <p>Looking back, John McConnell’s gelding did quite well to be so competitive over the minimum trip given his recent exploits, but since connections have worked out that he requires a much stiffer test, he hasn’t looked back.</p>
+          </li>
+      </ul>
+  </section>
+  <section class="testimonials">
+      <h3 class="title">Testimonials from our adventurers</h3>
+      <hr>
+      <p class="quote">We were a family travelling with our 4 children aged 7-17 years on MT's 7 day mountain and desert experience.
+           MT gets our highest recommendation.
+           Karima responded very quickly on questions by e-mail prior to arrival. The trip was a true adventure, especially the moutain part.</p>
+      <p class="author">- Sanket Mukherjee</p>
+      <p class="quote">MT made my trek up to Toubkal a wonderful experience. Our guide, Mohamed, was spectacular.
+          He led my friends and I all the way to the summit while fasting for Ramadan! We hiked all the way up to the Toubkal Refuge from Imlil on the first day, where we relaxed and ate Iftar with Mohamed.</p>
+      <p class="author">- Rakesh Das</p>
+      <p class="quote">We did a 4 day trek through berber villages and mount toubkal.
+          The trek was relatively hard with the final summit being more difficult than the 3 days before it.
+          Our adventure guide, Omar was great. He was able to give us some ecological history of the region and cultural points along the way.</p>
+      <p class="author">- Antara Banarjee</p>
+  </section>
+  <section class="contact">
+    <a name="contact"></a>
+      <h3 class="title">Learn more</h3>
+      <p>Want to know about our up-coming mountain related events.
+          Or join with us just by subscribing. No spam mail from us.
+      </p>
+      <hr>
+      <form>
+          <input type="email" placeholder="Email Address">
+          <a href="#" class="btn">Subscribe Now</a>
+      </form>
+  </section>
+{% endblock %}

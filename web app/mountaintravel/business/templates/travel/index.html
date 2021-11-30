@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'travel\css\styles.css' %}">
+  <!-- <title>Document</title> -->
+  {% block title %}{% endblock %}
+</head>
+<body>
+
+  {% if page == 'mountain' %}
+  <header>
+        <h2><a href="#">Mountain Travel</a></h2>
+        <nav>
+          {% for navs in nav %}
+          <li><a href="mountain/{{ navs }}">{{ navs }}</a></li>
+          {% endfor %}
+        </nav>
+    </header>
+  {% else %}
+  <header class="header2">
+        <h2><a href="#">Mountain Travel</a></h2>
+        <nav>
+          {% for navs in nav %}
+          <li><a href="{{ navs }}">{{ navs }}</a></li>
+          {% endfor %}
+        </nav>
+    </header>
+  {% endif %}
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>Image from <a href="#">some website</a></p>
+        <p>All @copyright resived</p>
+        <ul>
+            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://use.fontawesome.com/87c2a586ff.js"></script>
+</body>
+</html>
